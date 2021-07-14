@@ -21,7 +21,12 @@ def main():
     reg_num = input("주민등록번호:")
     mesg = None
     ####### 구현 시작 ################
+    loc_code = int(reg_num[8:10])
 
+    if 0 <= loc_code <= 8:
+        mesg = '서울입니다'
+    else:
+        mesg = '서울이 아닙니다'
 
     ########구현 끝 #######################
 

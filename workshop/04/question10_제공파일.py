@@ -20,8 +20,8 @@ def main():
     phone_number = input("휴대전화 번호 입력 : ")
     mesg = None
     ####### 구현 시작 ################
-    company_dict = {}
-
+    company_dict = {'011':'SKT', '016':'KT', '019':'LGU', '010':'알수없음'}
+    mesg = '당신은 {0} 사용자입니다.'.format(company_dict[phone_number[:3]])
 
     ########구현 끝 #######################
 

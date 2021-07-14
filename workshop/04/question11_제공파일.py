@@ -20,7 +20,14 @@ def main():
     zipcode = input("우편번호:")
     mesg = None
     ####### 구현 시작 ################
+    zipcode_gubun_no = int(zipcode[2])
 
+    if 0 <= zipcode_gubun_no <= 2:
+      mesg = '강북구'
+    elif 3 <= zipcode_gubun_no <= 5:
+      mesg = '도봉구'
+    else:
+      mesg = '노원구'
 
     ########구현 끝 #######################
 
