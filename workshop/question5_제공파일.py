@@ -13,17 +13,20 @@ def main():
     '''
     url = "http://sharebook.kr"
     url2 = "https://korea.co.kr"
+    url3 = "https://naver.com"
 
     domain = None
     ####### 구현 시작 ################
     domain = url[url.rfind('.') + 1:]
-    domain2 = url[url.rfind('.') + 1:]
+    domain2 = url2[url2.rfind('.') + 1:]
+    domain3 = url3[url3.rfind('.') + 1:]
 
     ########구현 끝 #######################
 
     print("-------------------------------------------------------------------------------")
     print(domain)
     print(domain2)
+    print(domain3)
     print("-------------------------------------------------------------------------------")
 
 
