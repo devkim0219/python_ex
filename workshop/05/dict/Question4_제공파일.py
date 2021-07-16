@@ -12,11 +12,12 @@ def main():
     '''
 
     # 입력 : 상품 정보(상품명:금액) 목록
-    products = {"monitor": 100000, "mouse": 3000, "notebook": 800000, "keyboard": 9800}
+    # products = {"monitor": 100000, "mouse": 3000, "notebook": 800000, "keyboard": 9800}
     products =  {"mouse":150000, "keyboard":138000, "pointer":80000, "battery":19900}
 
-    temp_dict = {};
+    temp_dict = {}
     ####### 구현 시작 ################
+    temp_dict = {product + '-price':price for product, price in products.items()}
 
     ########구현 끝 #######################
 

@@ -10,11 +10,12 @@ def main():
 
 
     # 입력 : 상품 정보( 상품명,가격) 목록
-    infomation= [ ["television", 500000], ["washer", 890000], ["fridge", 1200000], ["styler", 990000], ["cleaner", 250000]]
-    # infomation = [["television", 5700000], ["washer", 1250000], ["fridge",1990000], ["styler",1000000], ["cleaner",850000]]
+    # infomation= [ ["television", 500000], ["washer", 890000], ["fridge", 1200000], ["styler", 990000], ["cleaner", 250000]]
+    infomation = [["television", 5700000], ["washer", 1250000], ["fridge",1990000], ["styler",1000000], ["cleaner",850000]]
 
     top3_list = []
     ####### 구현 시작 ################
+    top3_list = sorted(infomation, key=lambda x: x[1], reverse=True)[:3]
 
     ########구현 끝 #######################
 

@@ -6,13 +6,16 @@ def main():
 
     '''
     # 입력 : 튜플 데이터(이름 튜플)
-    name_tuple =("Alis", "James", "Martin", "aim", "John", "atom", "adam", "chris", "dan")
-    # name_tuple =("Jimmy", "Mars", "Peter", "John", "Alis", "edan", "Call")
+    # name_tuple =("Alis", "James", "Martin", "aim", "John", "atom", "adam", "chris", "dan")
+    name_tuple =("Jimmy", "Mars", "Peter", "John", "Alis", "edan", "Call")
 
-    start_character = "A";
+    start_character = "A"
 
     count = 0
     ####### 구현 시작 ################
+    for name in name_tuple:
+        if 'A' in name.upper()[0]:
+            count += 1
 
     ########구현 끝 #######################
 

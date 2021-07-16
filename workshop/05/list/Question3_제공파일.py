@@ -7,17 +7,18 @@ def main():
 출력2) 출금 후 계좌 잔액 총합: 50500
     '''
     # 입력 : 출금액
-    amount = 5000
-    # amount = 10000
+    # amount = 5000
+    amount = 10000
 
     # 입력 : 계좌 잔액 목록
-    accounts = [15000, 1000, 6000, 20000, 3000]
-    # accounts = [20000, 7000, 500, 40000, 13000]
+    # accounts = [15000, 1000, 6000, 20000, 3000]
+    accounts = [20000, 7000, 500, 40000, 13000]
 
     # 계좌 잔액 목록의 각 계좌 잔액에서 출금액을 출금(차감)한 뒤 각 계좌 잔액 총합을 계산하는 함수 withdraw_and_sum() 호출 , withdraw_and_sum()함수 응시생 구현
     # 단, 계좌 잔액이 출금액 보다 작으면 출금하지 않는다.
     result_accounts = 0
     ####### 구현 시작 ################
+    result_accounts = sum([account - amount if account >= amount else account for account in accounts])
 
     ########구현 끝 #######################
 

@@ -9,6 +9,7 @@ def main():
     total_price = None
     
     ####### 구현 시작 ################
+    total_price = sum(icecream.values())
 
     ########구현 끝 #######################
 

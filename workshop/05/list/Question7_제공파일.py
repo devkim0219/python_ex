@@ -9,11 +9,22 @@ def main():
     '''
 
     # 입력 : 성적 목록
-    scores = [89, 75, 56, 39, 95, 100, 88, 65]
+    # scores = [89, 75, 56, 39, 95, 100, 88, 65]
     scores = [35, 85, 66, 78, 99, 40, 100, 89]
 
     temp_list = []
     ####### 구현 시작 ################
+    for score in scores:
+        if score >= 90:
+            temp_list.append('A')
+        elif score >= 80:
+            temp_list.append('B')
+        elif score >= 70:
+            temp_list.append('C')
+        elif score >= 60:
+            temp_list.append('D')
+        else:
+            temp_list.append('F')
 
     ########구현 끝 #######################
     
